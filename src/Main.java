@@ -3,14 +3,14 @@
 public class Main {
     public static void main(String[] args) {
 
-        System.out.println("Задача 1");
+        System.out.println(" Задача 1 ");
         int clientOS = 0;
         if (clientOS == 1) {
             System.out.println("Установите версию приложения для Android по ссылке");
         }else if (clientOS == 0) {
             System.out.println("Установите версию приложения для iOS по ссылке");
         }
-        System.out.println("Задача 2");
+        System.out.println(" Задача 2 ");
         int clientDeviceYear = 2014;
         if (clientOS == 0) {
             if (clientDeviceYear < 2015) {
@@ -25,6 +25,15 @@ public class Main {
                 System.out.println("Установите версию приложения для Android по ссылке");
             }
         }
-
+        System.out.println(" Задача 3 ");
+        int year = 2025;
+        if (year > 1584 && ((year % 400 == 0) || (year % 4 == 0 && year % 100 != 0))) {
+            System.out.println(year + " год является високосным");
+        } else if (year > 1584) {
+            System.out.println(year + " год не является високосным");
+        } else {
+            System.out.println("Год не может быть меньше 1585");
+        }
+        System.out.println(" Задача 4 ");
     }
 }
