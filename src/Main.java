@@ -21,7 +21,6 @@ public class Main {
             } else {
                 System.out.println("Установите версию приложения для Android по ссылке");
             }
-
         System.out.println("Задача 3");
         int year = 2025;
         if (year > 1584 && ((year % 400 == 0) || (year % 4 == 0 && year % 100 != 0))) {
